@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f7f6f3, #eee7de);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    width: 92%;
+    margin: 25px auto;
+    padding: 18px 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #9b6b43;
+    border-bottom: 2px solid #9b6b43;
+    padding-bottom: 5px;
+}
+
+.order-btn,
+.menu-btn,
+button {
+    background-color: #9b6b43;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HOME PAGE */
+.hero {
+    width: 90%;
+    max-width: 1300px;
+    margin: 25px auto 40px;
+    padding: 50px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+}
+
+.left {
+    max-width: 520px;
+}
+
+.tag {
+    color: #9b6b43;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background-color: #9b6b43;
+    margin: 20px 0;
+}
+
+.desc {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.right img {
+    width: 430px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* MENU PAGE */
+.menu-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto 40px;
+    padding: 50px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    flex: 1;
+}
+
+.menu-page h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.menu-subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    width: 310px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 24px;
+}
+
+.menu-content h2 {
+    margin-bottom: 10px;
+}
+
+.menu-content p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+/* CONTACT PAGE */
+.page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto 40px;
+    padding: 50px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    flex: 1;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+input,
+textarea {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.contact-info img {
+    width: 160px;
+    border-radius: 15px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* PHONE */
+@media (max-width: 768px) {
+    .header,
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero,
+    .menu-page,
+    .page {
+        padding: 30px;
+    }
+
+    h1,
+    .menu-page h1 {
+        font-size: 32px;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+}
