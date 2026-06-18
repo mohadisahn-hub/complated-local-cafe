@@ -27,7 +27,8 @@ body {
 }
 
 .logo {
-    font-size: 22px;
+    text-decoration: none;
+    color: black;
     font-weight: bold;
 }
 
