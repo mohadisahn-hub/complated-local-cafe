@@ -272,3 +272,9 @@ iframe {
         width: 100%;
     }
 }
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
